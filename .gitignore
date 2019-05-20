@@ -1,6 +1,5 @@
 node_modules/
 web-ext-artifacts/
 .web-extension-id
-web-ext-config.js
 package-lock.json
 yarn.lock

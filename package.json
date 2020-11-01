@@ -3,10 +3,13 @@
   "description": "You can jump to headings.",
   "version": "0.0.1",
   "author": "PrsPrsBK",
+  "dependencies": {
+    "webextension-polyfill": ">=0.4.0"
+  },
   "devDependencies": {
-    "@types/firefox-webext-browser": "^67.0.1",
-    "ava": "^1.4.1",
-    "eslint": "^5.16.0"
+    "@types/firefox-webext-browser": ">=67.0.1",
+    "ava": "^3.0.0",
+    "eslint": "^7.0.0"
   },
   "keywords": [
     "WebExtensions"

@@ -1,10 +1,18 @@
 {
+  "commandDescription": {
+    "message": "見出しを表示します。",
+    "description": ""
+  },
   "extensionName": {
     "message": "友情・努力・見出し",
     "description": ""
   },
   "extensionDescription": {
     "message": "見出しにジャンプしやすくします。",
+    "description": ""
+  },
+  "popupTitle": {
+    "message": "見出しへジャンプ",
     "description": ""
   }
 }

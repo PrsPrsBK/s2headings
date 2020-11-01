@@ -1,10 +1,18 @@
 {
+  "commandDescription": {
+    "message": "To show headings.",
+    "description": ""
+  },
   "extensionName": {
     "message": "Stairway To Headings",
     "description": ""
   },
   "extensionDescription": {
     "message": "You can jump to headings.",
+    "description": ""
+  },
+  "popupTitle": {
+    "message": "STH",
     "description": ""
   }
 }

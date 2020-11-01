@@ -1,5 +1,9 @@
+.nyc_output/
+lib/
 node_modules/
+testTgt/
 web-ext-artifacts/
+*.log
 .web-extension-id
 package-lock.json
 yarn.lock

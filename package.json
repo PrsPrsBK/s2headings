@@ -9,7 +9,8 @@
   "devDependencies": {
     "@types/firefox-webext-browser": ">=67.0.1",
     "ava": "^3.0.0",
-    "eslint": "^7.0.0"
+    "eslint": "^7.0.0",
+    "ffext-manifest-schema": ">=0.19.0"
   },
   "keywords": [
     "WebExtensions"

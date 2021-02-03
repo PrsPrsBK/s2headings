@@ -7,3 +7,4 @@ web-ext-artifacts/
 .web-extension-id
 package-lock.json
 yarn.lock
+work.ps1

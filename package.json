@@ -4,12 +4,11 @@
   "version": "0.0.1",
   "author": "PrsPrsBK",
   "dependencies": {
-    "webextension-polyfill": ">=0.4.0"
+    "webextension-polyfill": ">=0.7.0"
   },
   "devDependencies": {
-    "@types/firefox-webext-browser": ">=67.0.1",
-    "ava": "^3.0.0",
-    "eslint": "^7.0.0",
+    "@types/firefox-webext-browser": ">=82.0.0",
+    "eslint": "^7.19.0",
     "ffext-manifest-schema": ">=0.19.0"
   },
   "keywords": [

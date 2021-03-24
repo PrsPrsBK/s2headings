@@ -9,5 +9,3 @@ document.addEventListener('DOMContentLoaded', () => {
     task: 'reqHeadings',
   });
 });
-
-// vim:expandtab ff=dos fenc=utf-8 sw=2

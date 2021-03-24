@@ -20,4 +20,3 @@ browser.runtime.onMessage.addListener((message, _sender, _sendResponse) => {
   }
 });
 
-// vim:expandtab ff=dos fenc=utf-8 sw=2

@@ -1,10 +1,13 @@
 (function() {
 
   const getHeadings = () => {
-    const headingElm = document.body.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    const headingList = document.body.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
-    for(const elm of headingElm) {
-      console.log(`${elm.tagName} ${elm.textContent}`);
+    for(const h of headingList) {
+      if(!h.id) {
+        h.id = `${Date.now()}`;
+      }
+      console.log(`${h.tagName}#${h.id} ${h.textContent}`);
     }
 
   };

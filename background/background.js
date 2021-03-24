@@ -12,6 +12,8 @@ browser.runtime.onMessage.addListener((message, _sender, _sendResponse) => {
         .then(() => {
           console.log(`3 at ${Date.now()}`);
           browser.tabs.sendMessage(tabId, {task: 'pickup'});
+        }).then(headings => {
+          console.log(`${JSON.stringify(headings)}`);
         });
     });
   }

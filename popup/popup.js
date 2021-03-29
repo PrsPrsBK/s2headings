@@ -12,9 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(() => {
         return browser.tabs.sendMessage(tabId, {task: 'pickup'});
       }).then(headings => {
-        let text = '';
-        for(const h of headings) { text += `${h.tagName}#${h.id}|${h.text}|, `; }
-        document.querySelector('#display').textContent = `${Date.now()}-${text}`;
+        const board = document.querySelector('#display');
+        while (board.firstChild) {
+          board.firstChild.remove();
+        }
+        const div = document.createElement('div');
+        for(const h of headings) {
+          const elm = document.createElement(`${h.tagName}`);
+          elm.id = h.id;
+          elm.textContent = h.text;
+          div.appendChild(elm);
+        }
+        board.appendChild(div);
       });
   });
 });

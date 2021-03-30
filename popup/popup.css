@@ -38,4 +38,8 @@ td.button:hover {
   background-color: #55ee55;
 }
 
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  text-decoration: underline;
+}
+
 /* vim:expandtab ff=dos fenc=utf-8 sw=2 */

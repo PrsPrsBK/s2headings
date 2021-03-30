@@ -6,7 +6,6 @@ Browser Extension. You can jump to headings by mouse.
 
 * **UIを現代的にする** - 結局は「馬鹿にされない」ため、「普通だと思われる」ため、「話をしにくそうな人だと思われない」ためであるが、ゆえに優先度が高い。
 * いま表示されている部分がどの見出しの部分であるのか、目立たせる
-* マウスカーソルホバー時の表示を変える
 * どこかの時点でJavaScriptやめる - TypeScriptかF#(Fableを使う)に変更したい
 * Twitter等に対応する
 

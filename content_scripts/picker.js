@@ -21,4 +21,6 @@
   if(browser.runtime.onMessage.hasListener(processTask) === false) {
     browser.runtime.onMessage.addListener(processTask);
   }
+
+  return Promise.resolve();
 })();

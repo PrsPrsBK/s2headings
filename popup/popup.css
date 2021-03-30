@@ -38,6 +38,13 @@ td.button:hover {
   background-color: #55ee55;
 }
 
+h1 { padding-left: 0em; }
+h2 { padding-left: 1em; }
+h3 { padding-left: 2em; }
+h4 { padding-left: 3em; }
+h5 { padding-left: 4em; }
+h6 { padding-left: 5em; }
+
 h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
   text-decoration: underline;
 }

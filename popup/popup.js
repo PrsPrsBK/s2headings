@@ -1,6 +1,5 @@
 const selectorStore = [
-  ['https://github.com/', '#readme article'],
-  ['https://twitter.com/', '#wrong_selector'],
+  [ 'https://github.com/', '#readme article' ],
 ];
 
 const jumpToHx = id => {

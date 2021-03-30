@@ -13,8 +13,12 @@
   };
 
   const processTask = message => {
-    if (message.task === 'pickup') {
+    if(message.task === 'pickup') {
       return Promise.resolve(getHeadings());
+    }
+    else if(message.task === 'jump') {
+      document.getElementById(message.id).scrollIntoView();
+      return false;
     }
   };
 

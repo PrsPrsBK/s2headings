@@ -1,6 +1,9 @@
-document.addEventListener('click', evt => {
-  // jumpToHeadings
-});
+const jumpToHx = id => {
+  browser.tabs.query({ currentWindow: true, active: true }).then(tabs => {
+    const tabId = tabs[0].id;
+    browser.tabs.sendMessage(tabId, { task: 'jump', id });
+  });
+};
 
 const showHeadings = () => {
   browser.tabs.query({ currentWindow: true, active: true }).then(tabs => {
@@ -34,5 +37,11 @@ const showHeadings = () => {
     });
   });
 };
+
+document.addEventListener('click', evt => {
+  if(evt.target.id) {
+    jumpToHx(evt.target.id);
+  }
+});
 
 showHeadings();

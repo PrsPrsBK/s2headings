@@ -7,7 +7,6 @@
         h.id = `${Date.now()}-${counter}`;
         counter++;
       }
-      console.log(`${h.tagName}#${h.id} ${h.textContent}`);
     }
 
     return Array.from(headingList, elm => { return { tagName: elm.tagName, id: elm.id, text: elm.textContent.trim() }; });

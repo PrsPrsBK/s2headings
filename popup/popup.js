@@ -1,3 +1,8 @@
+const selectorStore = [
+  ['https://github.com/', '#readme article'],
+  ['https://twitter.com/', '#wrong_selector'],
+];
+
 const jumpToHx = id => {
   browser.tabs.query({ currentWindow: true, active: true }).then(tabs => {
     const tabId = tabs[0].id;
@@ -8,10 +13,11 @@ const jumpToHx = id => {
 const showHeadings = () => {
   browser.tabs.query({ currentWindow: true, active: true }).then(tabs => {
     const tabId = tabs[0].id;
+    const selector = selectorStore.find(pair => tabs[0].url.startsWith(pair[0]));
     browser.tabs.executeScript(tabId, { file: '/lib/browser-polyfill.min.js' }).then(() => {
       return browser.tabs.executeScript(tabId, { file: '/content_scripts/picker.js' });
     }).then(() => {
-      return browser.tabs.sendMessage(tabId, { task: 'pickup' });
+      return browser.tabs.sendMessage(tabId, { task: 'pickup', selector: selector ? selector[1] : undefined, });
     }).then(headings => {
       const board = document.querySelector('#display_pane');
       while(board.firstChild) {
@@ -32,7 +38,7 @@ const showHeadings = () => {
         board.firstChild.remove();
       }
       const div = document.createElement('div');
-      div.textContent = err.message;
+      div.textContent = err.message ?? err;
       board.appendChild(div);
     });
   });

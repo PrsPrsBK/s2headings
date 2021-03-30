@@ -22,3 +22,8 @@ Browser Extension. You can jump to headings by mouse.
 * Chrome Web Storeに出す? - 今まで無意味な面倒で疲弊したし、3月(正確には1月)からプライバシー関連の表明が必要でさらに面倒になったので気が乗らない。
 
 * **ライセンス設定する** - 単純に忘れていた。MITかBlue Oak
+* テスト - やりたいが辛い。
+
+  * `browser.runtime.executeScript()` 駆動にしてしまったのでNodejs(とavajsとか)でCLIからテストできない。
+  * 多分Puppeteerとかでローカルサーバのページにアクセスさせて実施する。PCの性能的にやりたくない、というか多分やってられない。
+
